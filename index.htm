@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .content, .back-btn {
+            display: none;
+        }
+        .section {
+            display: none; /* Abschnitte standardm??ig verstecken */
+        }
+        #qr-code {
+            margin-top: 20px;
+        }
+        .back-btn {
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .back-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* ?berschrift zu Beginn ausblenden */
+        h1 {
+            display: none;
+        }
+
+        /* Die Navigation am Ende vor der Grafik platzieren */
+        #navigation {
+            margin-top: 20px;
+        }
+
+        /* Verbesserung der Anzeige des h2-Textes */
+        h2 {
+            font-weight: normal; /* Verhindert, dass der Text fett ist */
+            line-height: 1.6;     /* Zeilenh?he f?r besseren Abstand zwischen den Zeilen */
+            word-wrap: break-word; /* Verhindert, dass W?rter zu lang werden und den Textbereich sprengen */
+            font-size: 18px;      /* Etwas kleinere Schriftgr??e f?r bessere Lesbarkeit */
+            margin-bottom: 20px;  /* Abstand nach unten */
+            text-align: center;   /* Text zentrieren */
+            max-width: 80%;       /* Verhindert, dass der Text den gesamten Bildschirm ausf?llt */
+            margin-left: auto;
+            margin-right: auto;   /* Zentriert den Text innerhalb des Containers */
+        }
+
+        /* Entfernt die Aufz?hlungszeichen und Standardabst?nde */
+        ul {
+            list-style-type: none; /* Entfernt die Aufz?hlungszeichen */
+            padding: 0; /* Entfernt den Standard-Padding */
+            margin: 0; /* Entfernt den Standard-Margin */
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+
+    <h1 id="main-header">HAPPY BIRTHDAY M&Auml;USESPECK!!! &#128524;&#128522; </h1>
+    
+    <div id="password-prompt">
+        <label for="password">Passwort:</label>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Login</button>
+    </div>
+
+    <!-- Hauptbereich (Text + QR-Code) -->
+    <div class="content" id="content">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hey Schatz&#128152; i w&uuml;nsch da alles, alles Gute zum Geburtstag! Jetzt woash
+        wie ma sich mit 25 f&uuml;hlt  und bish am 30er jetzt o scho n&auml;her als 
+        am 20er &#128539; aber des ish ok, zit kama leider ned zruckdreha
+        und mir k&ouml;nnan jo zemma alt si und &uuml;sre sorgen und schmerzen mitanand 
+        teilen &#129301; i wir uf jeden Fall immer do si und vasuacha dine sorgen
+        und schmerzen ertr&auml;glicher zum macha &#128538; 
+        Als Geschenk hob i f&uuml;r di a biz nervenfutter und a klenne Emotional Support Cucumber, die 
+        di immer dra erinnra soll , das du des alles super meistersch , du alles schaffa kannsch
+        wenn du willsh, i di meeega tollig find und du an Platz in minam Herz hosh&#128522; I hoff, dass die di Gurke immer akle 
+        ufbaua kann und di vlt zum grinsa bringt, falls mol an schlechter tag hosh und i grad ned f&uuml;r di do si kann &#129303;<br><br>
+        
+        I LOVE YOU !! &#128536;&#128150;<br><br>
+        
+        </h2>
+        <p> </p>
+        <h3></h3>
+        <img src="IMG_6976.jpeg" alt="Grafik" width="500">
+        <div id="qr-code"></div>
+    </div>
+
+    <!-- Navigation Links (jetzt am Ende des Inhalts) -->
+    <div id="navigation" class="content">
+        <h2></h2>
+        <ul>
+            <li><a href="#" onclick="showSection('section1')">10 Gr&uuml;nde Warum i di lieb&#128152;</a></li>
+            <br>
+            <li><a href="#" onclick="showSection('section2')">Unser Liebeshoroskop &#9811;&#128143;&#9809; </a></li>
+        </ul>
+    </div>
+
+    <!-- Abschnitte -->
+    <div id="section1" class="section">
+        <h2>10 Gr&uuml;nde warum i die lieb&#128152;</h2>
+        <p> - Du hosh immer a offenes ohr f&uuml;r mi und h&ouml;rsch ma immer aufmerksam zua &#128066;<br><br>
+            - Du zoagsch ma verst&auml;ndniss wenn i viellicht amol an H&auml;nger hab&#128566;<br><br>
+            - Wenn i di lachen siah, mahsh du min Tag um einiges besser&#129303;<br><br>
+            - O wenns klischeehaft klingt, i LIEB din Augen, wenn ma beianand sen und du ma ind Auga schausch, siach i richtig des strahla in dina auga und denn ishas so als w&uuml;rd d wealt f&uuml;r an kurzer Moment Stillstoh und in minam Bauch fangts a kribbla &#128150;<br><br>
+            - Wenn i mol an schlechter Tag khet hob mush ned viel dua damits ma wieder besser goht, es reicht wenn i denn einf zit mit dir verbinga kann und alles andere ish denn vergessen, du duash ma einf guat!&#128524;<br><br>
+            - Ma kann sich mega guat mit dir unterhalta und i lieb &uuml;sre spontanen ,  tiefgr&uuml;ndigen gespr&auml;che in da nacht &#128143;<br><br>
+            - Du verurteilsch mi ned f&uuml;r des was oder wie i bin&#128584;<br><br>
+            - Du bish in jeder Situation 100%ig ehrlich zu mir und o wenns viellicht manchmol hart ish, woas i des sehr zum sch&auml;tza&#128538;<br><br>
+            - I liebs das du f&uuml;r jeden scheiss zum ho bish , vor allem wenn dine 5 minuten hosh und dia mit mir usleabsch (i liebs vor allem wie du bish , wenn du dine 5 minuten hosh)&#129322;<br><br>
+            - Du hosch da gliche Humor wie i, also k&ouml;nnama &uuml;ber da gliche scheiss zemm lacha ohne das ma sich gedanken macha muss obs da andere viellicht &uuml;bertrieben oder so findet&#129323;<br><br>
+            Alles in allem kama sega du bish einf a richtiges Premium Paket &#129322; i find di einf tollig und i lieb di echt wahnsinnig, i loss di bestimmt num us minam leaba verschwinda und i bin ma sicher das ma no einige sch&ouml;ane Jahre mitanand verbringa weran, viele erinnerunga sammlan und &uuml;s irgendwenn a gemeinsames leaba ufbauan&#128522;&#128152;<br><br>
+            PS: Umtausch ausgeschlossen! &#10060;
+        </p>
+    </div>
+
+    <div id="section2" class="section">
+        <h2>Unser Liebeshoroskop &#9811;&#128143;&#9809;</h2>
+        <p>Die Sternzeichen Steinbock und Fische geh&ouml;ren beide zum Element Erde. Laut Liebeshoroskop macht sie das zu perfekten Partnern. Ob im Bett oder im Alltag, es gibt kaum etwas, bei dem diese beiden nicht harmonieren. Trotzdem sind sie vom Naturell her verschieden.
+					 <br>	<br>
+           <strong>Sexuelle &Uuml;bereinstimmung &uuml;berzeugt bei diesen Sternzeichen</strong><br>
+           W&auml;hrend es bei anderen Sternzeichen durchaus etwas langweilig im Bett sein kann, spr&uuml;hen bei der Kombination Steinbock und Fische nur so die Funken.
+           Das Liebeshoroskop verspricht prickelnde Stunden zu zweit. Dabei &uuml;bernimmt der dominante Steinbock gern die F&uuml;hrung. Die sensiblen Fische bringen etwas Romantik ins Geschehen. So hat jeder seinen ganz speziellen Part, der nicht nur die Sch&auml;ferst&uuml;ndchen zu einem wahren Genuss macht.
+					 <br><br>
+           <strong>Steinbock und Fische: Das sagt das Liebeshoroskop</strong><br>
+           Auch im Alltag erg&auml;nzen sich Steinbock und Fische perfekt. Dabei ist das Horoskop der beiden Sternzeichen durchaus gegens&auml;tzlich. Der Steinbock ist daf&uuml;r bekannt, dass er sehr strukturiert denkt. Fische hingegen sind oft sehr sensibel und vertr&auml;umt. Falls sich der Partner mal wieder in einer Traumwelt verirrt oder irgendwelchen Hirngespinsten hinterherjagt, f&uuml;hrt ihn der Steinbock schnell und gekonnt wieder zur&uuml;ck auf den Boden der Tatsachen.
+           <br><br>
+           Nat&uuml;rlich braucht es dazu ein wenig &Uuml;bung. Beim ersten Date k&ouml;nnte der Flirt zwischen diesen beiden zun&auml;chst etwas unbeholfen wirken. Haben sich die Liebenden aber erstmal an die Eigenarten und Charakteristika des anderen gew&ouml;hnt, finden sie schnell den Weg zu Harmonie und Zufriedenheit.
+           <br><br>
+           Dabei beeinflusst nicht nur der Steinbock seinen Partner, auch der Fisch hat einen positiven Einfluss auf seinen Gef&auml;hrten. Er sorgt zum Beispiel daf&uuml;r, dass sich der Steinbock entspannt und mehr Emotionen zeigt. So entwickeln sich beide in ihrer Pers&ouml;nlichkeit und bilden eine fast perfekte Einheit. Allerdings gibt es auch kleine H&uuml;rden.
+           <br><br>
+           <strong>Probleme m&uuml;ssen immer angesprochen werden</strong><br>
+           Laut Liebeshoroskop besteht bei diesen Sternzeichen die Gefahr, dass Beziehungsprobleme oder andere Unstimmigkeiten nicht immer direkt angesprochen werden, um die Harmonie nicht zu gef&auml;hrden. Das ist jedoch ein Fehler. Steinbock und Fische passen so gut zusammen, dass sie durchaus in der Lage sind, sich gemeinsam ihren Problemen zu stellen. Sie sollten daher nie totgeschwiegen werden, auch wenn dadurch ein kleines Gewitter droht. Die Vers&ouml;hnung danach ist umso sch&ouml;ner.
+
+						
+
+
+</p>
+    </div>
+
+    <div id="section3" class="section">
+        <h2>Abschnitt 3</h2>
+        <p>Dies ist der dritte Abschnitt mit mehr Text.</p>
+    </div>
+
+    <!-- Zur?ck-Button -->
+    <button class="back-btn" id="backBtn" onclick="goBack()">Zur&uuml;ck</button>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = '20241124';
+            
+            if (password === correctPassword) {
+                // Passwort korrekt: Passwortbereich ausblenden und Inhalt anzeigen
+                document.getElementById('password-prompt').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('navigation').style.display = 'block'; // Navigation anzeigen
+                document.getElementById('main-header').style.display = 'block'; // h1 wieder anzeigen
+                
+                // QR Code f?r die Seite generieren
+                const currentUrl = window.location.href;
+                QRCode.toCanvas(document.getElementById('qr-code'), currentUrl, function (error) {
+                    if (error) console.error(error);
+                    console.log('QR Code erfolgreich generiert!');
+                });
+            } else {
+                alert('Falsches Passwort!');
+            }
+        }
+
+        // Funktion, um Abschnitte anzuzeigen
+        function showSection(sectionId) {
+            // Alle Abschnitte ausblenden
+            const sections = document.querySelectorAll('.section');
+            document.getElementById('main-header').style.display = 'none';
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Hauptbereich ausblenden
+            document.getElementById('content').style.display = 'none';
+
+            // Den ausgew?hlten Abschnitt anzeigen
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+
+            // "Zur?ck" Button anzeigen
+            document.getElementById('backBtn').style.display = 'block';
+
+            // Navigation ausblenden
+            document.getElementById('navigation').style.display = 'none';
+        }
+
+        // Funktion f?r den "Zur?ck"-Button
+        function goBack() {
+            // Alle Abschnitte ausblenden
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Hauptinhalt anzeigen
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('navigation').style.display = 'block';
+            document.getElementById('main-header').style.display = 'block';
+
+            // "Zur?ck"-Button ausblenden
+            document.getElementById('backBtn').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
